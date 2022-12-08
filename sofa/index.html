@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/6bd6c771de.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="#" class="logo">Q Commerce</a>
+        <nav class="navbar">
+            
+            <a href="#home">Home</a>
+            <a href="#sofa">Sofa</a>
+            <a href="#brands">brands</a>
+            <a href="#acces">ACCESSORIES</a>
+            <a href="#culture">CULTURE</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+        
+    </header>
+    <!--end header-->
+
+    <div class="product-page-container">
+        <span class="link-route">
+            <a href="#">Home</a> > <a href="#">Sofa</a>
+        </span>
+        <section id="product-page">
+            <div class="product-page-img">
+                <iframe title="Relax Sofa - White" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/187c64fecdbc4e0c87054b71c74f06d6/embed?autospin=1&autostart=1&camera=0"> </iframe>
+            </div>
+            <div class="product-page-details">
+                <strong>New Luxury Sofa</strong>
+                <span class="product-category">
+                    Luxury - Sofa
+                </span>
+                <span class="price">£700<del>£950</del></span>
+                <p class="small-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam voluptates dolorum veritatis delectus iste. Officiis, repellat tempore minus quasi ut, aut maxime rerum doloribus totam voluptates possimus nesciunt neque nisi!</p>
+                <div class="product-options">
+                    <span>Select Color</span>
+                    <div class="product-color-options">
+                        <div class="product-color-box">
+                            <input type="checkbox" id="blue" value="blue"/>
+                            <label for="blue">
+                                <img src="images/blue.png"/>
+                            </label>
+                        </div>
+
+                        <div class="product-color-box">
+                            <input type="checkbox" id="red" value="red"/>
+                            <label for="red">
+                                <img src="images/red.jpg"/>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <span class="product-page-offer"><i class="fa-solid fa-tag"></i>20% Discount</span>
+                <div class="cart-btns">
+                    <a href="#" class="add-cart">Add to Basket</a>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!--JQuery-->
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+
+    <!--Script-->
+    <script type="text/javascript">
+        //only one color select
+        $(document).ready(function(){
+            $('input:checkbox').click(function(){
+               $('input:checkbox').not(this).prop('checked', false);
+            });
+        })
+    </script>
+
+
+
+</body>
+</html>
